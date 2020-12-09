@@ -6,6 +6,7 @@ By default, the corresponding Git tags are also removed but you can disable that
 
 You can trigger the action from any GitHub event you want, typically you would trigger from release creation or from merge to the release branch as part of your automated release generation.
 
+
 ```yaml
 name: Prerelease cleanup
 
