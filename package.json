@@ -14,7 +14,7 @@
     "once": "^1.4.0",
     "semver": "^7.3.4",
     "tunnel": "^0.0.6",
-    "universal-user-agent": "^6.0.0",
+    "universal-user-agent": "^7.0.1",
     "wrappy": "^1.0.2",
     "yallist": "^4.0.0"
   },
