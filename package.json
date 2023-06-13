@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@actions/github": "^4.0.0",
+    "@actions/github": "^5.1.1",
     "before-after-hook": "^2.1.0",
     "deprecation": "^2.3.1",
     "is-plain-object": "^5.0.0",
