@@ -12,7 +12,7 @@
     "lru-cache": "^10.0.0",
     "node-fetch": "^3.3.1",
     "once": "^1.4.0",
-    "semver": "^7.5.3",
+    "semver": "^7.5.4",
     "tunnel": "^0.0.6",
     "universal-user-agent": "^7.0.1",
     "wrappy": "^1.0.2",
