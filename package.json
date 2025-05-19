@@ -6,7 +6,7 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.1",
-    "before-after-hook": "^3.0.2",
+    "before-after-hook": "^4.0.0",
     "deprecation": "^2.3.1",
     "is-plain-object": "^5.0.0",
     "lru-cache": "^11.1.0",
