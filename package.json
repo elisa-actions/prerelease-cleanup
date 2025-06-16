@@ -38,6 +38,6 @@
   "homepage": "https://github.com/elisa-actions/prerelease-cleanup#readme",
   "devDependencies": {
     "@vercel/ncc": "^0.38.3",
-    "jest": "^29.7.0"
+    "jest": "^30.0.0"
   }
 }
