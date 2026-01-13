@@ -4,7 +4,7 @@
   "description": "Remove old prereleases while maintaining actual releases",
   "main": "dist/index.js",
   "dependencies": {
-    "@actions/core": "^1.11.1",
+    "@actions/core": "^2.0.2",
     "@actions/github": "^7.0.0",
     "before-after-hook": "^4.0.0",
     "deprecation": "^2.3.1",
