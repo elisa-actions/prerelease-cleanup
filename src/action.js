@@ -1,8 +1,8 @@
-const core = require("@actions/core");
-const semver = require("semver");
-const { getOctokit, context } = require("@actions/github");
+import * as core from "@actions/core";
+import semver from "semver";
+import { getOctokit, context } from "@actions/github";
 
-exports.run = async function () {
+export async function run() {
   const token = core.getInput("github-token", { required: true });
   const deleteTags = core.getInput("delete-tags") === "true";
   const dryRun = core.getInput("dry-run") === "true";
@@ -51,4 +51,4 @@ exports.run = async function () {
       }
     })
   );
-};
+}
