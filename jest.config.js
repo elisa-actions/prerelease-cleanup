@@ -1,7 +1,10 @@
-module.exports = {
+export default {
   testEnvironment: 'node',
   collectCoverage: true,
   coverageDirectory: 'coverage',
   testMatch: ['**/src/**/*.test.js'],
-  verbose: true
+  verbose: true,
+  moduleNameMapper: {
+    '^(\\.\\.\\.?\\/.+)\\.js$': '$1',
+  },
 };

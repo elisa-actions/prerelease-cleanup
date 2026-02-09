@@ -1,11 +1,33 @@
-const { run } = require('./action');
-const core = require('@actions/core');
-const github = require('@actions/github');
-const semver = require('semver');
+import { jest } from '@jest/globals';
 
-jest.mock('@actions/core');
-jest.mock('@actions/github');
-jest.mock('semver');
+// Mocks must be defined before imports in ESM
+jest.unstable_mockModule('@actions/core', () => ({
+  getInput: jest.fn(),
+  setOutput: jest.fn(),
+}));
+
+jest.unstable_mockModule('@actions/github', () => ({
+  getOctokit: jest.fn(),
+  context: {
+    repo: {},
+  },
+}));
+
+jest.unstable_mockModule('semver', () => ({
+  default: {
+    valid: jest.fn(),
+    rcompare: jest.fn(),
+    lt: jest.fn(),
+  },
+  valid: jest.fn(),
+  rcompare: jest.fn(),
+  lt: jest.fn(),
+}));
+
+const { run } = await import('./action.js');
+const core = await import('@actions/core');
+const github = await import('@actions/github');
+const semver = (await import('semver')).default;
 
 describe('run', () => {
   beforeEach(() => {
