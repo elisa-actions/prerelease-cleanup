@@ -30,8 +30,9 @@ const github = await import('@actions/github');
 const semver = (await import('semver')).default;
 
 describe('run', () => {
-  beforeEach(() => {
+  afterEach(() => {
     jest.clearAllMocks();
+    github.context.repo = {};
   });
 
   test('should set the latest prerelease correctly', async () => {
