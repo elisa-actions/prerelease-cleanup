@@ -39,7 +39,7 @@
   "homepage": "https://github.com/elisa-actions/prerelease-cleanup#readme",
   "devDependencies": {
     "@vercel/ncc": "^0.45.0",
-    "baseline-browser-mapping": "^2.11.14",
+    "baseline-browser-mapping": "^2.11.17",
     "jest": "^30.4.2"
   }
 }
